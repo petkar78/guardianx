@@ -37,3 +37,14 @@ In our case:
 ## 🛠 What Language Are They Written In?
 
 Most smart contracts (including ours) use:
+Solidity 
+Here’s a simple example:
+
+```solidity
+pragma solidity ^0.8.0;
+
+contract GuardianX {
+    function sendSOS() public {
+        // logic here
+    }
+}
