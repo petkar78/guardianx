@@ -1,0 +1,23 @@
+# 🛠️ Smart Contract – Step 4: Writing the SOS Function
+
+---
+
+## ✅ What We Did
+
+We added a function named `sendSOS()` which will trigger the `SOSAlert` event and log an emergency signal on-chain.
+
+---
+
+## 🔹 Code So Far
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract GuardianX {
+    event SOSAlert(address indexed sender, string message);
+
+    function sendSOS(string memory message) public {
+        emit SOSAlert(msg.sender, message);
+    }
+}
